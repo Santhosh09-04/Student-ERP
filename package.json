@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Student ERP Fullstack System",
   "scripts": {
+    "postinstall": "npm install --prefix server",
     "dev": "concurrently -n \"SERVER,CLIENT\" -c \"cyan,magenta\" \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
     "dev:client": "npm run dev --prefix client",
     "dev:server": "npm run dev --prefix server",

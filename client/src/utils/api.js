@@ -1,4 +1,4 @@
-const API_BASE = import.meta.env.VITE_API_URL || "/api"
+const API_BASE = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? "https://student-erp-n765.onrender.com/api" : "/api")
 
 const TOKEN_KEY = "erp_token"
 const USER_KEY = "erp_user"
